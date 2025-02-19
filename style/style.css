@@ -572,3 +572,95 @@ input.invalid, textarea.invalid {
         font-size: 10px;
     }
 }
+@media screen and (min-width: 768px) {
+    .main-content {
+        grid-template-columns: 300px 1fr;
+    }
+    
+    .row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .serv {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .nav-icons a {
+        width: 80px;
+        height: 80px;
+        font-size: 16px;
+    }
+    
+    .profile-img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .profile h2 {
+        margin-top: 100px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+    
+    .nav-icons {
+        padding: 10px;
+        gap: 10px;
+    }
+    
+    .nav-icons a {
+        width: 60px;
+        height: 60px;
+        font-size: 12px;
+    }
+    
+    .profile {
+        margin-top: 60px;
+        padding: 15px;
+    }
+    
+    .profile-img {
+        width: 100px;
+        height: 100px;
+        top: -50px;
+    }
+    
+    .profile h2 {
+        margin-top: 60px;
+        font-size: 1.2rem;
+    }
+    
+    .badge {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+    
+    .contact-info {
+        padding: 10px;
+    }
+    
+    .download-btn {
+        width: 100%;
+        font-size: 14px;
+    }
+}
+@media print {
+    body {
+        background: white;
+    }
+    
+    .container {
+        max-width: none;
+        padding: 0;
+    }
+    
+    .nav-icons {
+        display: none;
+    }
+    
+    .main-content {
+        grid-template-columns: 1fr;
+    }
+}
