@@ -235,6 +235,21 @@ header {
     background: linear-gradient(to right, #FF9A1A, #EC1C09);;
    
 }
+.row{
+    display: flex;
+    justify-content: start;
+    gap: 200px;
+    
+}
+.bottom{
+    margin-bottom: 10px;
+   
+}
+.column{
+    text-align: center;
+    
+    
+}
 .download-btn {
     border-radius: 20px;
     background: linear-gradient(to right, #FF9A1A, #EC1C09);
@@ -277,6 +292,40 @@ header {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
+.serv {
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    background-color: #F8FBFB;
+    width: 100%;
+}
+.container1{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 600px;
+   margin-top: 10px;
+}
+.badge{
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    background-color: #E1E8EF;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: all 0.2s ease;
+}
+.badge:hover {
+    transform: translateY(-2px);
+    color: white;
+    background: linear-gradient(to right, #FF9A1A, #EC1C09);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
 .service p{
     font-family: 'Raleway';
     font-weight: 400;
@@ -289,7 +338,13 @@ header {
 .service-card {
     padding: 20px;
     border-radius: 10px;
-    background-color: #FFEBD1;
+    background-color: #FFE3BF;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.servic-card {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #FFEED9;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
@@ -305,6 +360,11 @@ header {
 .service-card p {
     color: #666;
     line-height: 1.6;
+}
+.service {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
 }
 
 /* Responsive Design */
